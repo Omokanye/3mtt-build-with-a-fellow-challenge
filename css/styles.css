@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6EB; /* Light background */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000400; /* Dark Green */
+}
+
+header img {
+    width: 150px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text for links */
+    font-weight: bold;
+}
+
+.buttons button {
+    background-color: #3EA160; /* Green Button Color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.buttons button:hover {
+    background-color: #1F5130; /* Darker Green on hover */
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.business-input {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.business-input input {
+    padding: 10px;
+    width: 200px; /* Fixed width for input */
+    border: 2px solid #052312; /* Border color */
+    border-radius: 5px;
+}
+
+.business-input button {
+    background-color: #3EA160; /* Green Button Color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.business-input button:hover {
+    background-color: #1F5130; /* Darker Green on hover */
+}
+
+.what-we-offer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.offer-item {
+    text-align: center;
+    width: 30%; /* Width of each offer item */
+    margin: 10px 0;
+}
+
+.offer-item img {
+    width: 100%; /* Responsive image */
+    max-width: 150px; /* Limit image size */
+}
+
+.signup-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.signup-button {
+    background-color: #3EA160; /* Green Button Color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.signup-button:hover {
+    background-color: #1F5130; /* Darker Green on hover */
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    padding: 20px;
+    background-color: #0A4624; /* Darker Background */
+    color: white;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.testifier-img {
+    width: 100px; /* Set size for testifier image */
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #052312; /* Dark Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 150px; /* Footer logo size */
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .what-we-offer {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .offer-item {
+        width: 80%; /* Adjust item width for smaller screens */
+    }
+}
