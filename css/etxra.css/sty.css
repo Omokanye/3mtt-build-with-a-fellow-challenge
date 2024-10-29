@@ -6,27 +6,90 @@ body {
     background-color: #F4F6EB; /* Light background */
 }
 
-/* Header Styles */
+/* Reset some default styling for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #000400; /* Dark Green */
+    padding: 20px 10%;
+    background-color: #4CAF50; /* A nice green header */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
+/* Logo Image Styling */
 header img {
-    width: 150px; /* Adjust logo size */
+    width: 120px; /* Adjust width as needed */
+    height: auto;
+    cursor: pointer;
 }
 
+/* Navigation Menu Styling */
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Buttons Styling */
+.buttons button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+}
+
 }
 
 nav a {
